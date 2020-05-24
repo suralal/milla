@@ -1,0 +1,29 @@
+<div class="d-flex flex-column tabs-signs">
+  <div class="d-flex flex-column signs-details" *ngFor="let number of [0,1,2]">
+    <div>
+      <div class="py-2">
+        <span class="signs-date py-3">20 march 2018</span>
+      </div>
+      <div class="d-flex flex-wrap">
+        <div class="d-flex justify-content-between signs-card col-12 col-sm-6 col-lg-4" *ngFor="let number of [0,1,2,3]">
+          <div class="d-flex flex-column signs-card-det w-100">
+            <div class="py-2 px-2">
+              <span class="signs-title">Soverom</span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="sigs-img" src="assets/images/sign_logo.png" alt="sign_logo">
+            </div>
+            <div class="d-flex sign-user py-2 px-2">
+              <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q"
+                alt="">
+              <div class="d-flex flex-column pl-2">
+                <span class="user-name">Expert Signs</span>
+                <span class="sign-time">2 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<section>
+  <div class="d-flex flex-column signs-details">
+    <div>
+      <div class="d-flex flex-wrap">
+        <div class="d-flex justify-content-between signs-card col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let number of [0,1,2,3]"
+          (click)="openModal(template)">
+          <div class="d-flex flex-column signs-card-det w-100">
+            <div class="py-2 px-2">
+              <span class="signs-title">Hello</span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <img class="sigs-img" src="assets/images/sign_logo.png" alt="sign_logo">
+            </div>
+            <div class="d-flex sign-user py-2 px-2">
+              <!-- <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q"
+                alt=""> -->
+              <div class="d-flex flex-column pl-2">
+                <span class="sign-time">4 videos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">HELLO</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="d-flex flex-wrap signs-details">
+      <div class="d-flex justify-content-between signs-card col-12 col-sm-6" *ngFor="let number of [0,1,2,3]" [routerLink]="['/dashboard/sign-details']"
+        (click)="modalRef.hide()">
+        <div class="d-flex signs-card-det w-100">
+          <div class="d-flex">
+            <img class="sigs-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q"
+              alt="">
+          </div>
+          <div class="d-flex flex-column sign-user pl-2 py-1 w-100">
+            <span class="sign-name">SURALAL suresh</span>
+            <span class="sign-time">4 days ago</span>
+            <span class="sign-rate">top</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

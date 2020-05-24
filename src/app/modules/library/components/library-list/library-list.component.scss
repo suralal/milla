@@ -1,0 +1,97 @@
+section {
+  .header {
+    background: #b9b9b8;
+    color: #fff;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    z-index: 3;
+    .search {
+      input {
+        outline: none;
+      }
+      input[type='text'] {
+        -webkit-appearance: textfield;
+        -webkit-box-sizing: content-box;
+        font-family: inherit;
+        font-size: 80%;
+      }
+      input::-webkit-search-decoration,
+      input::-webkit-search-cancel-button {
+        display: none;
+      }
+
+      input[type='text'] {
+        background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+        border: solid 1px #ccc;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        width: 55px;
+        position: absolute;
+        right: 1em;
+        border-radius: 10em;
+        transition: all 0.5s;
+      }
+      input[type='text']:focus {
+        width: 130px;
+        background-color: #fff;
+        border-color: #ec433c;
+        box-shadow: 0 0 5px rgba(109, 207, 246, 0.5);
+      }
+
+      input:-moz-placeholder {
+        color: #999;
+      }
+      input::-webkit-input-placeholder {
+        color: #999;
+      }
+    }
+  }
+  .tab-signs {
+    margin-top: 3.5em;
+    tab {
+      padding-right: 0.3rem !important;
+    }
+    .signs-details {
+      .signs-date {
+      }
+      .signs-card {
+        padding: 0;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        .signs-card-det {
+          padding: 0;
+          border: 1px solid rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          border-radius: 2px;
+        }
+        .signs-title {
+          font-weight: 800;
+        }
+        .sigs-img {
+          width: 200px;
+          height: 200px;
+        }
+        .sign-user {
+          background: #f4f4f4;
+          .user-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+          .user-name {
+            font-size: 14px;
+          }
+          .sign-time {
+            font-size: 10px;
+            color: #8c8c7e;
+          }
+        }
+      }
+    }
+  }
+}

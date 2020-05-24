@@ -1,0 +1,42 @@
+// MIXIN Variables
+@mixin image {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  .bg-banner {
+    background-image: url('/assets/images/banner_logo.png');
+    @include image;
+  }
+  .pin-section {
+    input[type='text'] {
+      width: 39px;
+      height: 45px;
+      border-radius: 0px;
+      border-color: #b8b8b8;
+      margin: 3px;
+    }
+    h4 {
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.6;
+    }
+    div {
+      .pin-text {
+        font-size: 75% !important;
+        color: #3133ce !important;
+        cursor: pointer;
+      }
+    }
+    .login-btns {
+      .btn-fb {
+        width: 100%;
+        background-color: #4267b2;
+        color: #fff;
+      }
+    }
+  }
+}

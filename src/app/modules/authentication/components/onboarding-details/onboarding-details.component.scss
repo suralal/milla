@@ -1,0 +1,159 @@
+// MIXIN Variables
+@mixin image {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-profile {
+  div {
+    .bg-banner {
+      background-image: url('/assets/images/banner_register.png');
+      @include image;
+    }
+    .user-image {
+      position: absolute;
+      box-shadow: 0 0 23px -7px #000;
+      border-radius: 50%;
+      background: #fff;
+      top: 9em;
+      .rounded-circle {
+        width: 150px;
+        height: 150px;
+      }
+      .upload-image input[type='file'] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+      .upload-image {
+        background: #4e5fdc;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        overflow: hidden;
+        display: inline-block;
+        right: 0;
+        margin-top: -3em;
+        cursor: pointer;
+        img {
+          width: 40px;
+          position: relative;
+          bottom: 1px;
+          left: 0px;
+        }
+      }
+    }
+    .user-details {
+      width: 30%;
+      margin-top: 6em;
+      label {
+        font-size: 90%;
+        margin-bottom: 0;
+      }
+      .login-btns {
+        .btn-fb {
+          background-color: #4267b2;
+          color: #fff;
+          font-size: 80%;
+        }
+      }
+    }
+  }
+}
+
+.form-control {
+  padding: 0;
+}
+
+.section-sms {
+  .bg-banner {
+    background-image: url('/assets/images/banner_phone.png');
+    height: 180px !important;
+    @include image;
+  }
+  div {
+    form {
+      .form-control {
+        border: none;
+        border-bottom: 1px solid #d2cfcf;
+        border-radius: 0;
+        text-align: center;
+      }
+    }
+    span {
+      font-size: 62%;
+      text-align: center;
+      position: relative;
+      bottom: 10px;
+      color: #868383;
+    }
+  }
+  .login-btns {
+    button {
+      font-size: 80%;
+    }
+    .btn-fb {
+      background-color: #4267b2;
+      color: #fff;
+    }
+    .btn-google {
+      background-color: transparent;
+      color: #2564e2;
+    }
+  }
+}
+.otp-section {
+  input[type='text'] {
+    width: 39px;
+    height: 45px;
+    border-radius: 0px;
+    border-color: #b8b8b8;
+    margin: 3px;
+  }
+  h5 {
+    font-size: 90%;
+    text-align: center;
+    line-height: 1.6;
+  }
+  div {
+    label {
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .otp-text {
+      font-size: 75% !important;
+      color: #3133ce !important;
+      cursor: pointer;
+    }
+  }
+  .login-btns {
+    .btn-fb {
+      width: 90%;
+    }
+  }
+}
+
+#canvas {
+  display: none;
+}
+
+#photoPreview {
+  width: 100%;
+}
+.preview-container {
+  position: relative;
+  .uploadingStatus {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 6em;
+    font-weight: bold;
+    color: #009b00;
+  }
+}

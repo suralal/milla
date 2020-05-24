@@ -1,0 +1,36 @@
+// MIXIN Variables
+@mixin image {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-login {
+  div {
+    .bg-banner {
+      background-image: url('/assets/images/banner_success.png');
+      @include image;
+    }
+    .content-text {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .content-footer {
+      font-size: 95%;
+    }
+    .login-btns {
+      width: 20%;
+      @media (min-width: 300px) and (max-width: 767px) {
+        width: 50%;
+      }
+      button {
+        font-size: 80%;
+      }
+      .btn-fb {
+        background-color: #4267b2;
+        color: #fff;
+      }
+    }
+  }
+}

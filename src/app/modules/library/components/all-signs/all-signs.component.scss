@@ -1,0 +1,83 @@
+section {
+  .header {
+    background: #b9b9b8;
+    color: #fff;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    z-index: 3;
+    .title {
+      font-size: 1rem;
+    }
+    img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin-top: -3px;
+    }
+    span {
+      margin-left: 5x;
+    }
+    div:focus {
+      outline: 0;
+    }
+    .btn-group {
+      .dropdown-menu li {
+        cursor: pointer;
+        span {
+          font-weight: 100;
+          font-size: 15px;
+        }
+      }
+    }
+    .dropdown-menu li:hover {
+      background-color: #6e7275;
+      color: #fff;
+    }
+    .dropdown-menu.show {
+      min-width: 7rem !important;
+    }
+  }
+  .signs-details {
+    .signs-date {
+      text-transform: capitalize;
+    }
+    .signs-card {
+      padding: 0;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      .signs-card-det {
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border-radius: 2px;
+      }
+      .signs-title {
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      .sigs-img {
+        width: 200px;
+        height: 200px;
+      }
+      .sign-user {
+        background: #f4f4f4;
+        .user-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .user-name {
+          font-size: 14px;
+          text-transform: capitalize;
+        }
+        .sign-time {
+          font-size: 10px;
+          color: #8c8c7e;
+        }
+      }
+    }
+  }
+}

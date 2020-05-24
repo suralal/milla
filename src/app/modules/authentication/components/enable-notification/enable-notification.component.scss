@@ -1,0 +1,33 @@
+@mixin image {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-notification {
+  .bg-banner {
+    background-image: url('/assets/images/banner_phone.png');
+    height: 200px;
+    @include image;
+  }
+  .notify-section {
+    h3 {
+      font-size: 100%;
+      text-align: center;
+      line-height: 1.6;
+    }
+    .notify-btns {
+      .btn-fb {
+        background-color: #4267b2;
+        color: #fff;
+        font-size: 80%;
+      }
+      .notify-text {
+        font-size: 75% !important;
+        color: #3133ce !important;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<section>
+  <div class=" d-flex py-3 px-2 justify-content-between header">
+    <div>
+      <span class="py-2">LIBRARY</span>
+    </div>
+    <div class="search">
+      <form [formGroup]="searchSigns">
+        <input type="text" placeholder="Search" formControlName="searchItems">
+      </form>
+    </div>
+  </div>
+  <div class="tab-signs">
+    <tabset>
+      <tab heading="MY SIGNS" class="p-3">
+        <milla-my-signs></milla-my-signs>
+        <!-- <milla-search-list></milla-search-list> -->
+      </tab>
+      <tab heading="EXPERTS" class="p-3">
+        <milla-expert-signs></milla-expert-signs>
+      </tab>
+    </tabset>
+  </div>
+</section>

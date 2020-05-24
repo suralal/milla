@@ -1,0 +1,41 @@
+.signs-details {
+  .signs-date {
+    text-transform: capitalize;
+  }
+  .signs-card {
+    padding: 0;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    .signs-card-det {
+      padding: 0;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      border-radius: 2px;
+    }
+    .signs-title {
+      font-weight: 800;
+      text-transform: capitalize;
+    }
+    .sigs-img {
+      width: 200px;
+      height: 200px;
+    }
+    .sign-user {
+      background: #f4f4f4;
+      .user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .user-name {
+        font-size: 14px;
+        text-transform: capitalize;
+      }
+      .sign-time {
+        font-size: 10px;
+        color: #8c8c7e;
+      }
+    }
+  }
+}

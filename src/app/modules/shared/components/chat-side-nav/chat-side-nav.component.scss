@@ -1,0 +1,50 @@
+section {
+  .user-details {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .user-name {
+      font-size: 90%;
+      font-weight: 600;
+    }
+  }
+  accordion-group {
+    cursor: pointer;
+    .chat-users {
+      border-bottom: 1px solid #b9b9b8;
+      padding: 5px;
+      div img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+      div .user-name {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      div .user-relation {
+        font-size: 10px;
+        color: #6f6f6f;
+        text-transform: capitalize;
+      }
+    }
+    .chat-group {
+      .grup-details {
+        border-bottom: 1px solid #b9b9b8;
+      }
+      div .grup-name {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+      div .grup-members {
+        font-size: 10px;
+        color: #6f6f6f;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

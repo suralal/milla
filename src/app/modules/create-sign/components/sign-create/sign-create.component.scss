@@ -1,0 +1,136 @@
+section {
+  .header {
+    background: #b9b9b8;
+    color: #fff;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    z-index: 3;
+  }
+  .bg-image {
+    margin-top: 4.5em;
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .video-sign {
+    label {
+      font-weight: 700;
+    }
+    .form-control {
+      padding: 0;
+    }
+    .video-upload {
+      height: 300px;
+      img {
+        width: 200px;
+      }
+    }
+  }
+  .image-sign {
+    label {
+      font-weight: 700;
+    }
+    .form-control {
+      padding: 0;
+    }
+    button {
+      margin-left: 0.1em;
+      margin-top: 1em;
+    }
+    .add {
+      .cat-list {
+        background: #3c3b3b;
+        margin-right: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        color: #fff;
+        .cat-name {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        .ico-close {
+          cursor: pointer;
+          img {
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+          }
+        }
+      }
+    }
+    .image-upload {
+      span {
+        color: #f06160;
+        font-size: 15px;
+      }
+      .image-div {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .sugg-images {
+          margin-right: 10px;
+          width: 100px;
+          height: 100px;
+          position: relative;
+          .image-suggetions {
+            label {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              right: 0;
+              cursor: pointer;
+            }
+            .checked {
+              background-image: url('/assets/images/icons/ic_tick.png');
+              background-repeat: no-repeat;
+              position: absolute;
+              left: 4em;
+            }
+            .unChecked {
+            }
+            input {
+              display: none;
+            }
+          }
+          img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+      .uploaded-images {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        img {
+          width: 100px;
+          height: 100px;
+          margin-right: 10px;
+          margin-top: 10px;
+        }
+        .uploaded-images-close {
+          position: absolute;
+          right: -4px;
+          top: 4px;
+          cursor: pointer;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+      .upload-image {
+        width: 100px;
+        height: 100px;
+        background-color: #bbbbbb;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

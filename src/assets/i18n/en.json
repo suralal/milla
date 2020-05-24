@@ -1,0 +1,113 @@
+{
+  "HOME": "Home",
+  "ABOUT": "About",
+  "HELLO": "Hello",
+  "LOVE_TECH": "I love technology!",
+  "ABOUT_ADD": "You want more? Add them yourself!",
+  "ABOUT_REWARD": "For reward, here is a list of awesome computer scientists:",
+  "INPUT_HINT": "Enter a new computer scientist...",
+  "ADD_BTN_TEXT": "Add",
+  "SUCCESS_MSG": "Your deployment of Angular Seed Advanced worked perfectly.",
+  "GROUP_TITLE": "Groups",
+  "LOGOUT": "Logout",
+  "LOGOUT_CONFIRMATION": "Are you sure you want to log out?",
+
+  "WELCOME_TITLE": "Welcome",
+  "WELCOME_DESCRIPTION":
+    "Invite family and friends into your network\nand explore the possibilities of Milla Says.",
+  "WELCOME_FACEBOOK_BTN": "Continue with Facebook",
+  "WELCOME_GOOGLE_BTN": "Continue with Google",
+  "WELCOME_SMS_BTN": "Continue with SMS",
+
+  "PHONE_HINT": "Phone number",
+  "PHONE_COUNTRY_HINT": "Country Code",
+  "PHONE_DESCRIPTION":
+    "We will send you one time SMS message.\nCarrier rates apply",
+  "PHONE_CONTINUE_BTN": "Continue",
+  "PHONE_CANCEL_BTN": "Cancel",
+
+  "CONGRAT_TITLE": "Congratulations!",
+  "CONGRAT_DESCRIPTION":
+    "You've successfully registered an\naccount with Milla says.",
+  "CONGRAT_PROFILE": "It's time to setup your profile!",
+  "CONGRAT_PROFILE_BTN": "Set up my profile",
+
+  "REGISTER_FIRST_NAME": "First name",
+  "REGISTER_SURNAME": "Surname",
+  "REGISTER_EMAIL": "Email",
+  "REGISTER_PHONE_NUMBER": "Phone number",
+  "REGISTER_PIN": "Choose a pin number",
+  "REGISTER_SAVE_BTN": "Save & continue",
+
+  "DIALOG_PHOTO_CHOOSER": "Select picture",
+  "DIALOG_GALLERY": "From Photos",
+  "DIALOG_CAMERA": "From Camera",
+  "DIALOG_CANCEL": "Cancel",
+  "DIALOG_VIDEO_CHOOSER": "Select video",
+  "DIALOG_GALLERY_VIDEO": "From Gallery",
+  "DIALOG_DELETE_SIGN": "Are you sure you want to delete this sign?",
+
+  "ONBOARDING_CREATE_TITLE": "Create a network",
+  "ONBOARDING_CREATE_DESCRIPTION":
+    "You haven't joined any networks yet,\nCreate your own network and invite others to join!",
+  "ONBOARDING_CREATE_SAMPLE": "How we do signs with Milla Says ...",
+  "ONBOARDING_CREATE_BTN": "Create a network",
+
+  "NETWORK_CREATE_TITLE": "Create a network",
+  "NETWORK_NAME": "Network name",
+  "NETWORK_DESCRIPTION": "Description",
+  "NETWORK_LANGUAGE": "Network language",
+  "NETWORK_ANONYMOUS_DETAILS": "Anonymous details",
+  "NETWORK_AGE": "Subject age",
+  "NETWORK_GENDER": "Subject gender",
+  "NETWORK_ANONYMOUS_DESCRIPTION":
+    "This information will not be shared with the Network, your friends or family and provide us with statisctical information only.",
+  "NETWORK_CREATE_BTN": "Create a network",
+  "NETWORK_CANCEL_BTN": "Cancel",
+  "NETWORK_SELECT": "Select a network",
+
+  "NETWORK_INVITE_TITLE": "Invite members",
+  "NETWORK_INVITE_DESCRIPTION": "Invite others to join your network!",
+  "NETWORK_INVITE_BTN": "Invite members",
+  "NETWORK_INVITE_HINT":
+    "Anyone you invite will be sent a unique invite to your new network",
+  "NETWORK_INVITE_DONE_BTN": "Done, lets get started",
+
+  "SIGN_CREATE_TITLE": "Create Sign",
+  "SIGN_CREATE_BTN": "Create",
+  "SIGN_NAME": "Name",
+  "SIGN_NAME_HINT": "Give your sign a name",
+  "SIGN_UPLOAD": "Upload video",
+  "SIGN_UPLOAD_DESCRIPTION":
+    "Please make sure you own the rights to all video content before uploading to your network",
+  "SIGN_CATEGORIES": "Categories",
+  "SIGN_ADD_CATEGORY_HINT": "Add categories",
+  "SIGN_ADD_CATEGORY_BTN": "Add",
+  "SIGN_SUGGESTED_IMAGES": "Suggested images",
+  "SIGN_UPLOAD_MEDIA": "Upload",
+  "SIGN_FINISH_BTN": "Finish",
+  "SIGN_EDIT": "Edit sign",
+  "SIGN_DELETE": "Delete sign",
+  "SIGN_RELATED": "Related signs",
+  "SIGN_EDIT_TITLE": "Update sign",
+  "SIGN_EDIT_BTN": "Update",
+
+  "DASHBOARD_TITLE": "Dashboard",
+  "DASHBOARD_CREATE_DESCRIPTION":
+    "Upload images & videos to your library so you can start sharing them with your network",
+  "DASHBOARD_CREATE_SIGN": "Create a sign",
+
+  "LIBRARY_TITLE": "Library",
+
+  "MEMBERS_TITLE": "Members",
+  "MEMBERS_INVITE_DESCRIPTION":
+    "Don't forget to Invite members to join your network!",
+  "MEMBERS_MY_PROFILE": "My profile",
+  "MEMBERS_ADMINS": "Admins",
+  "MEMBERS_MEMBERS": "Members",
+
+  "GENDER_MALE": "Male",
+  "GENDER_FEMALE": "Female",
+  "GENDER_UNDEFINED": "-",
+  "ACCOUNT_TITLE": "Accounts"
+}

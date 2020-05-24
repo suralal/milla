@@ -1,0 +1,105 @@
+// MIXIN Variables
+@mixin image {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-login {
+  div {
+    .bg-banner {
+      background-image: url('/assets/images/banner_logo.png');
+      @include image;
+    }
+    .login-btns {
+      width: 25%;
+      @media (min-width: 300px) and (max-width: 767px) {
+        width: 50%;
+      }
+      button {
+        font-size: 80%;
+      }
+      .btn-fb {
+        background-color: #4267b2;
+        color: #fff;
+      }
+      .btn-google {
+        background-color: #f44336;
+        color: #fff;
+      }
+      .btn-sms {
+        background-color: #e53935;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.section-sms {
+  .bg-banner {
+    background-image: url('/assets/images/banner_phone.png');
+    height: 180px !important;
+    @include image;
+  }
+  div {
+    form {
+      .form-control {
+        border: none;
+        border-bottom: 1px solid #d2cfcf;
+        border-radius: 0;
+        text-align: center;
+      }
+    }
+    span {
+      font-size: 62%;
+      text-align: center;
+      position: relative;
+      bottom: 10px;
+      color: #868383;
+    }
+  }
+  .login-btns {
+    button {
+      font-size: 80%;
+    }
+    .btn-fb {
+      background-color: #4267b2;
+      color: #fff;
+    }
+    .btn-google {
+      background-color: transparent;
+      color: #2564e2;
+    }
+  }
+}
+.otp-section {
+  input[type='text'] {
+    width: 39px;
+    height: 45px;
+    border-radius: 0px;
+    border-color: #b8b8b8;
+    margin: 3px;
+  }
+  h5 {
+    font-size: 90%;
+    text-align: center;
+    line-height: 1.6;
+  }
+  div {
+    label {
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .otp-text {
+      font-size: 75% !important;
+      color: #3133ce !important;
+      cursor: pointer;
+    }
+  }
+  .login-btns {
+    .btn-fb {
+      width: 90%;
+    }
+  }
+}

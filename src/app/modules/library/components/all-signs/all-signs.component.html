@@ -1,0 +1,84 @@
+<section z>
+  <div class=" d-flex py-3 px-2 justify-content-between header">
+    <div [routerLink]="['/dashboard/library/library-list']">
+      <img src="/assets/images/icons/ic_arrow_back.png" alt="ic_arrow_back">
+      <span class="py-2 title">ALL SIGNS</span>
+    </div>
+    <div>
+    </div>
+    <div class="btn-group" dropdown>
+      <div id="button-basic" dropdownToggle>
+        <img src="assets/images/icons/ic_more_vert.png" alt="ic_more_vert">
+      </div>
+
+      <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+        <li role="menuitem">
+          <span>Sort by date</span>
+        </li>
+        <li role="menuitem">
+          <span>Sort by name</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="px-3 pt-3 mt-5 pb-2">
+    <div class="d-flex flex-column tabs-signs">
+      <div class="d-flex flex-column signs-details" *ngFor="let number of [0,1,2]">
+        <div>
+          <div class="py-2">
+            <span class="signs-date py-3">10 April 2018</span>
+          </div>
+          <div class="d-flex flex-wrap">
+            <div class="d-flex justify-content-between signs-card col-12 col-sm-6 col-lg-4" *ngFor="let number of [0,1,2,3]">
+              <div class="d-flex flex-column signs-card-det w-100">
+                <div class="py-2 px-2">
+                  <span class="signs-title">Hello</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img class="sigs-img" src="assets/images/sign_logo.png" alt="sign_logo">
+                </div>
+                <div class="d-flex sign-user py-2 px-2">
+                  <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q"
+                    alt="">
+                  <div class="d-flex flex-column pl-2">
+                    <span class="user-name">Surumi Pm</span>
+                    <span class="sign-time">a month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column tabs-signs">
+      <div class="d-flex flex-column signs-details" *ngFor="let number of [0,1,2]">
+        <div>
+          <div class="py-2">
+            <span class="signs-date py-3">20 march 2018</span>
+          </div>
+          <div class="d-flex flex-wrap">
+            <div class="d-flex justify-content-between signs-card col-4" *ngFor="let number of [0,1,2,3]">
+              <div class="d-flex flex-column signs-card-det w-100">
+                <div class="py-2 px-2">
+                  <span class="signs-title">Soverom</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img class="sigs-img" src="assets/images/sign_logo.png" alt="sign_logo">
+                </div>
+                <div class="d-flex sign-user py-2 px-2">
+                  <img class="user-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q"
+                    alt="">
+                  <div class="d-flex flex-column pl-2">
+                    <span class="user-name">Expert Signs</span>
+                    <span class="sign-time">2 month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

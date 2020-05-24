@@ -1,0 +1,93 @@
+section {
+  .signs-details {
+    .signs-card {
+      cursor: pointer;
+      padding: 0;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      .signs-card-det {
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border-radius: 2px;
+      }
+      .signs-title {
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      .sigs-img {
+        width: 150px;
+        height: 150px;
+      }
+      .sign-user {
+        background: #f4f4f4;
+        .user-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+        .sign-time {
+          font-size: 12px;
+          color: #8c8c7e;
+        }
+      }
+    }
+  }
+}
+.modal-header {
+  background: #f06160;
+  color: #fff;
+  border-radius: 0;
+  .modal-title {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+.modal-body {
+  padding-bottom: 0.5rem;
+  .signs-details {
+    .signs-card {
+      cursor: pointer;
+      padding: 0;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      .signs-card-det {
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.24);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        border-radius: 2px;
+      }
+      .signs-title {
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+      .sigs-img {
+        width: 60px;
+        height: 60px;
+      }
+      .sign-user {
+        background: #f4f4f4;
+        .sign-name {
+          color: #000;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        .sign-time {
+          font-size: 10px;
+          color: #8c8c7e;
+        }
+        .sign-rate {
+          font-size: 10px;
+          color: #f06160;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .signs-card:focus {
+    outline: none;
+  }
+}

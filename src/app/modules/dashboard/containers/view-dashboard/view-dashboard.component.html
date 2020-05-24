@@ -1,0 +1,80 @@
+<section class="nav-screen d-flex justify-content-between">
+  <div class="users-list">
+    <div class="d-flex flex-column mt-3">
+      <div class="d-flex flex-column justify-content-center align-items-center users" *ngFor="let network of networks$|async; let i = index"
+        (click)="activateNetwork(i)" [ngClass]="{'active':currentSelected===i}">
+        <img *ngIf="network?.thumbnail_url" millaHttpImage [url]="network?.thumbnail_url" alt="">
+        <img *ngIf="!network?.thumbnail_url" src="/assets/images/sign_logo.png" alt="">
+        <span>{{network?.title}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="menu-items d-flex flex-column align-items-center">
+    <div class="user-details d-flex flex-column my-4 align-items-center">
+      <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q" alt=""> -->
+      <img *ngIf="currentSelectedNetwork?.thumbnail_url" millaHttpImage [url]="currentSelectedNetwork?.thumbnail_url" alt="">
+      <img *ngIf="!currentSelectedNetwork?.thumbnail_url" src="/assets/images/sign_logo.png" alt="">
+      <span class="user-name pt-1">{{currentSelectedNetwork?.title}}</span>
+      <span class="user-state">Active</span>
+      <span class="btn btn-secondary" [routerLink]='["/network/edit-network",currentSelectedNetwork?.id]'>Edit</span>
+    </div>
+    <div class="menu-list">
+      <ul class="list-group">
+        <li class="list-group-item" routerLink='time-line' routerLinkActive="active-link">
+          <img src="/assets/images/icons/menu-icons/ic_dashboard.png" alt="">
+          <span>Dashboard</span>
+        </li>
+        <li class="list-group-item" routerLink='library/library-list' routerLinkActive="active-link">
+          <img src="/assets/images/icons/menu-icons/ic_albums.png" alt="">
+          <span>Library</span>
+        </li>
+        <li class="list-group-item" routerLink='sign/create-sign' routerLinkActive="active-link">
+          <img src="/assets/images/icons/menu-icons/ic_camera.png" alt="">
+          <span>Create</span>
+        </li>
+        <li class="list-group-item">
+          <img src="/assets/images/icons/menu-icons/ic_groups.png" alt="">
+          <span>Gruops</span>
+        </li>
+        <li class="list-group-item">
+          <img src="/assets/images/icons/menu-icons/ic_members.png" alt="">
+          <span>Members</span>
+        </li>
+        <li class="list-group-item">
+          <img src="/assets/images/icons/menu-icons/ic_account_circle.png" alt="">
+          <span>Account</span>
+        </li>
+      </ul>
+    </div>
+    <div class="sub-enu-list">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <span>Reports</span>
+        </li>
+        <li class="list-group-item">
+          <span>Quiz game</span>
+        </li>
+        <li class="list-group-item">
+          <span>Journal</span>
+        </li>
+        <li class="list-group-item">
+          <span>Settings</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class=" px-0 main-page">
+    <router-outlet></router-outlet>
+  </div>
+  <div class=" network-members p-0">
+    <milla-chat-side-nav [user]="user$| async"></milla-chat-side-nav>
+  </div>
+</section>
+<div class="fab-btn">
+  <div class="add-network d-flex justify-content-center align-items-center" routerLink='/network/create-network'>
+    <img src="assets/images/icons/ic_add_white.png" alt="ic_add">
+  </div>
+</div>
+<ng-template #EnterPin>
+  <milla-login-pin (pinValidated)="pinValidated($event)" [nextID]="nextID"></milla-login-pin>
+</ng-template>

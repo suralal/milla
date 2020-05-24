@@ -1,0 +1,21 @@
+<section class="d-flex flex-column justify-content-center align-items-center section-notification">
+  <div class="bg-banner w-100"></div>
+  <div class="notify-section">
+    <div class="d-flex flex-column align-items-center my-4 px-2">
+      <h1>Notifications</h1>
+      <h3>
+        Networks work best when you get
+        <br> the latest updates &amp; notifications
+        <br> as they happen.
+      </h3>
+    </div>
+    <div class="d-flex flex-column  align-items-center justify-content-center notify-btns mt-5 mb-3">
+      <button type="button" class="btn btn-fb mt-2" (click)="notifyMe()">
+        Allow notifications
+      </button>
+      <span class="notify-text mt-2 mb-4" (click)="bsModalRef.hide()">
+        Not right now, thanks
+      </span>
+    </div>
+  </div>
+</section>

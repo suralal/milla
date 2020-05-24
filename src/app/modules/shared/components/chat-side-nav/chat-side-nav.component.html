@@ -1,0 +1,35 @@
+<section>
+  <div class="user-details d-flex flex-column my-4 align-items-center">
+    <img millaHttpImage [url]="user?.picture_url" alt="">
+    <span class="user-name pt-1">{{user?.firstname}} {{user?.lastname}}</span>
+  </div>
+  <div class="my-4">
+    <accordion>
+      <accordion-group heading="Network Members (3)" [isOpen]="isFirstOpen">
+        <div class="my-3 chat-room-users">
+          <div class="d-flex chat-users pl-2" *ngFor="let number of [0,1,2]">
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFG-KP7QEgYbkfyyj77GOQS_WlzGSWPM9abjmuNpM2GutApetR-Q" alt="">
+            </div>
+            <div class="d-flex flex-column pl-2 pt-1">
+              <span class="user-name">David Welk</span>
+              <span class="user-relation">Father</span>
+            </div>
+          </div>
+        </div>
+      </accordion-group>
+      <accordion-group heading="Groups (3)">
+        <div class="chat-group pt-2">
+          <div class="d-flex flex-column grup-details pl-2 pt-1 pb-1" *ngFor="let number of [0,1,2]">
+            <span class="grup-name">School</span>
+            <div class="d-flex flex-wrap">
+              <span class="grup-members pr-1">You,</span>
+              <span class="grup-members">john,</span>
+              <span class="grup-members">david welk,</span>
+            </div>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</section>

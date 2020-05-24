@@ -1,0 +1,32 @@
+// MIXIN Variables
+@mixin image {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section {
+  height: 100vh;
+  background: #ec403d;
+  color: #fff;
+}
+.section-login {
+  div {
+    .bg-banner {
+      background-image: url('/assets/images/invite_logo.png');
+      @include image;
+    }
+    .content-text {
+      font-size: 15px;
+      font-weight: 400;
+    }
+    button {
+      font-size: 80%;
+    }
+    .btn-fb {
+      background-color: #4579c9;
+      color: #fff;
+    }
+  }
+}

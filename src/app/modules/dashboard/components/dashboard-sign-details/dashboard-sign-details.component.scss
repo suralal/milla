@@ -1,0 +1,100 @@
+section {
+  .header {
+    background: #b9b9b8;
+    color: #fff;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    width: 65%;
+    z-index: 3;
+    img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin-top: -3px;
+    }
+    .title {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+    span {
+      margin-top: 0px;
+      margin-left: 5px;
+    }
+    div:focus {
+      outline: 0;
+    }
+    .btn-group {
+      .dropdown-menu li {
+        cursor: pointer;
+        span {
+          font-weight: 100;
+          font-size: 15px;
+        }
+      }
+    }
+    .dropdown-menu li:hover {
+      background-color: #6e7275;
+      color: #fff;
+    }
+    .dropdown-menu.show {
+      min-width: 7rem !important;
+    }
+  }
+  .sign-div {
+    margin-top: 3.5em !important;
+    span {
+      font-weight: 600;
+      text-transform: uppercase;
+      position: relative;
+      top: 8px;
+      z-index: -1;
+    }
+    .sign-images {
+      overflow-x: scroll;
+      .time-line {
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .user-details {
+    cursor: pointer;
+    // z-index: -1;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .sign-details {
+      padding: 0;
+      .user-name {
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+      .sign-time {
+        font-size: 9px !important;
+        font-weight: 100 !important;
+        text-transform: lowercase !important;
+      }
+    }
+    .category-name {
+      span {
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 13px;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
+.text-center {
+  span {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #d2cfcf;
+  border-radius: 0;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+// DropDown Custom Style
+.dropdown-menu.show {
+  border-radius: 0;
+}
+.dropdown-menu {
+  left: -5em !important;
+}
+
+// Typeahead Custom Style
+form {
+  .dropdown-menu {
+    left: 0em !important;
+    border-radius: 0;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f06160;
+  }
+}
+.search form .dropdown-menu {
+  left: 81% !important;
+}
+
+// Button CSS Style
+.btn {
+  border-radius: 0;
+}
+.btn-primary {
+  background: #4579c9;
+}
+.btn-warn {
+  background: #ec433c;
+  color: #fff;
+}
+.btn-success {
+  background: #4cd964;
+  color: #fff;
+  border-color: transparent;
+}
+
+// Accordian CSS
+.card {
+  border: none;
+  border-radius: 0;
+}
+.card-header:first-child {
+  border-radius: 0 !important;
+}
+.card-header {
+  background-color: #b9b9b8;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+}
+.card-body {
+  padding: 0;
+  background: #dcdcdc;
+}
+.collapse.show {
+  background: #dcdcdc;
+}
+
+// Tab Custom Style
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-weight: 800;
+}
+.nav-tabs .nav-link.active {
+  color: #000;
+  background-color: #fff;
+  border-bottom: 3px solid #ec433c;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: rgb(199, 199, 199), rgb(199, 199, 199), rgb(199, 199, 199);
+  border-bottom: solid 3px #ec433c;
+}
+.nav-tabs a:hover {
+  color: gray;
+}
+.nav-tabs a {
+  color: gray;
+}
+
+// Model Custom Style
+.modal-content {
+  border-radius: 0 !important;
+}

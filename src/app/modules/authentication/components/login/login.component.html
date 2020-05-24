@@ -1,0 +1,104 @@
+<section class="section-login">
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="bg-banner w-100"></div>
+    <div class="d-flex flex-column align-items-center my-4 px-2">
+      <h1>Welcome</h1>
+      <div class="d-flex flex-column text-center">
+        <span>Create your network and invite family, friends</span>
+        <span>and others people in your network</span>
+      </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center login-btns mt-5">
+      <button type="button" class="btn btn-fb mt-2" (click)="signInWith('facebook')">
+        Continue with Facebook
+      </button>
+      <button type="button" class="btn btn-google mt-2" (click)="signInWith('google')">
+        Continue with Google
+      </button>
+      <button type="button" class="btn btn-sms mt-2" (click)="openSmsModel(sms)">
+        Continue with SMS
+      </button>
+    </div>
+  </div>
+</section>
+
+<ng-template #sms>
+  <section class="d-flex flex-column justify-content-center align-items-center section-sms">
+    <div class="bg-banner w-100"></div>
+    <div *ngIf="showSmsTemplate">
+      <div class="d-flex flex-column align-items-center my-4 px-2">
+        <form [formGroup]="phonenumberForm" class="d-flex flex-column">
+          <div class="form-group">
+            <select formControlName="countryCode" class="form-control" (change)='countryCodeSelected($event.target)'>
+              <option value="" selected disabled>Country Code</option>
+              <option [value]="item?.code" *ngFor="let item of countriesCallingCodes">{{item.name}} +{{item.code}} </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" formControlName="phonenumber" class="form-control" id="phonenumber" placeholder="1234567890">
+          </div>
+          <div id="recaptcha-login-identifier"></div>
+
+        </form>
+        <span>
+          We will send you a one time SMS message.
+          <br> Carrier rates apply
+        </span>
+      </div>
+      <div class="d-flex flex-column justify-content-center login-btns mt-5 mb-3">
+        <button type="button" class="btn btn-fb mt-2" (click)="sendSms()">
+          Continue
+        </button>
+        <button type="button" class="btn btn-google mt-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="!showSmsTemplate" class="otp-section">
+      <div class="d-flex flex-column align-items-center my-4 px-2">
+        <h5>
+          Please enter the security code we sent
+          <br> to the mobile phone 1234567890
+        </h5>
+      </div>
+      <div class="d-flex flex-column align-items-center my-4 px-2">
+        <label for="">Enter OTP</label>
+        <form [formGroup]='otpGroup'>
+          <div class="d-flex justify-content-center pb-4">
+            <span class="form-group">
+              <input type="text" formControlName="bOne" class="form-control" id='box1' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+            <span class="form-group">
+              <input type="text" formControlName="bTwo" class="form-control" id='box2' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+            <span class="form-group">
+              <input type="text" formControlName="bThree" class="form-control" id='box3' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+            <span class="form-group">
+              <input type="text" formControlName="bFour" class="form-control" id='box4' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+            <span class="form-group">
+              <input type="text" formControlName="bFive" class="form-control" id='box5' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+            <span class="form-group">
+              <input type="text" formControlName="bSix" class="form-control" id='box6' maxlength="1" (keyup)='onKey($event)'>
+            </span>
+          </div>
+        </form>
+        <span class="otp-text">
+          Did receive OTP? Resend or change number.
+        </span>
+      </div>
+      <div class="d-flex flex-column  align-items-center justify-content-center login-btns mt-5 mb-3">
+        <button type="button" class="btn btn-fb mt-2" (click)="verifyOTP()">
+          Verify
+        </button>
+        <button type="button" class="btn btn-google mt-2">
+          Cancel
+        </button>
+      </div>
+    </div>
+
+  </section>
+</ng-template>

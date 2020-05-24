@@ -1,0 +1,73 @@
+<section>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="bg-banner w-100">
+      <span *ngIf="!id">CREATE A NETWORK</span>
+      <span *ngIf="id">EDIT NETWORK</span>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="user-image mt-4">
+        <img *ngIf="networkPicURL && !uploadedNetworkPic" class="rounded-circle" millaHttpImage [url]="networkPicURL" alt="">
+        <img *ngIf="!uploadedNetworkPic && !networkPicURL " class="rounded-circle" src='/assets/images/logo_red.png' alt="">
+        <img *ngIf="uploadedNetworkPic" class="rounded-circle" [src]="uploadedNetworkPic" alt="">
+        <div class="upload-image">
+          <img src="/assets/images/icons/ic_camera.png" alt="">
+          <input type="file" name="myfile" (change)="saveNetworkPhoto($event)" />
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column justify-content-center user-details p-2">
+      <form [formGroup]="createNetworkForm" class="d-flex flex-column" (ngSubmit)="submitCreateNetworkForm()">
+        <div class="form-group">{{errorMessage}}</div>
+        <div class="form-group">
+          <label for="title"> Network name</label>
+          <input formControlName="title" type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+          <label for="description"> Description</label>
+          <textarea formControlName="description" class="form-control" id="description" rows="1"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="language"> Network Language</label>
+          <select formControlName="language" class="form-control" id="language">
+            <option [ngValue]="language?.language" *ngFor="let language of languages">{{language?.name}}</option>
+          </select>
+        </div>
+        <div class="py-3 span-text">
+          <span>
+            Anonymous details
+          </span>
+        </div>
+        <div class="d-flex">
+          <div class="form-group col-6 pl-0">
+            <label for="client_age"> Subject age</label>
+            <select formControlName='client_age' class="form-control" id="client_age">
+              <option *ngFor="let item of ageArray; let i = index" [ngValue]=i>{{i}}</option>
+            </select>
+          </div>
+          <div class="form-group col-6 p-0">
+            <label for="fisrtName">Subject gender</label>
+            <select class="form-control" formControlName="client_gender" id="exampleFormControlSelect1">
+              <option [ngValue]=0>Select Gender</option>
+              <option [ngValue]=1>Male</option>
+              <option [ngValue]=2>Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group information-text">
+          <span>
+            This information will not be shared with the Network, your friends or family and provide us with statisctical information
+            only.
+          </span>
+        </div>
+      </form>
+      <div class="d-flex flex-column  align-items-center justify-content-center login-btns mt-4 mb-3">
+        <button *ngIf="!id" type="button" class="btn btn-fb mt-1 w-100" (click)="submitCreateNetworkForm()">
+          CREATE A NETWORK
+        </button>
+        <button *ngIf="id" type="button" class="btn btn-fb mt-1 w-100" (click)="submitCreateNetworkForm()">
+          UPDATE NETWORK
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
